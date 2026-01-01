@@ -4,8 +4,7 @@ function About() {
       <h2>About Me</h2>
 
       <p>
-        I am a motivated <strong>Computer Science Engineering undergraduate</strong> 
-        with a strong interest in <strong>software development, problem-solving,
+        I am a motivated <strong>Computer Science Engineering undergraduate</strong>, with a strong interest in <strong>software development, problem-solving,
         and emerging technologies</strong>. I enjoy building efficient,
         scalable, and user-focused solutions through clean and maintainable code.
       </p>
