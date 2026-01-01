@@ -175,13 +175,29 @@ section {
 #about {
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: 40px 28px;
+  background: rgba(30, 41, 59, 0.65);
+  border-radius: 16px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Light theme support */
+.light #about {
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover polish for whole card */
+#about:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(56, 189, 248, 0.15);
 }
 
 /* Section heading */
 #about h2 {
   font-size: 32px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   text-align: center;
   position: relative;
 }
@@ -196,28 +212,11 @@ section {
   border-radius: 2px;
 }
 
-/* About content card feel */
+/* Paragraphs (no individual cards now) */
 #about p {
-  background: rgba(30, 41, 59, 0.65);
-  padding: 18px 22px;
-  border-radius: 12px;
   margin-bottom: 18px;
   line-height: 1.75;
   font-size: 15.5px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-/* Light theme support */
-.light #about p {
-  background: #ffffff;
-  color: #0f172a;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-}
-
-/* Hover polish */
-#about p:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
 }
 
 /* Strong text highlight */
@@ -229,7 +228,7 @@ section {
 /* Mobile optimization */
 @media (max-width: 768px) {
   #about {
-    padding-top: 20px;
+    padding: 24px 20px;
   }
 
   #about h2 {
@@ -238,7 +237,6 @@ section {
 
   #about p {
     font-size: 14.5px;
-    padding: 16px 18px;
   }
 }
 
