@@ -18,18 +18,19 @@ function Home() {
       </p>
 
       <div className="hero-buttons">
-        <a href="/Harsh_Mundada_Resume_2026.pdf" 
-          download="Harsh_Mundada_Resume_2026.pdf"
-          target="_blank"
-          rel="noopener noreferrer">
-          <button>Download Resume</button>
+        <a
+          href="/Harsh_Mundada_Resume_2026.pdf"
+          download
+        >
+          <button type="button">Download Resume</button>
         </a>
 
         <a href="#projects">
-          <button className="secondary-btn">View Projects</button>
+          <button type="button" className="secondary-btn">
+            View Projects
+          </button>
         </a>
       </div>
-      
     </section>
   );
 }

@@ -176,7 +176,6 @@ section {
     linear-gradient(90deg, rgba(56,189,248,0.12) 1px, transparent 1px);
   background-size: 40px 40px;
   animation: gridMove 30s linear infinite;
-
 }
 
 
@@ -197,6 +196,7 @@ section {
   height: 400px;
   background: radial-gradient(circle, rgba(56,189,248,0.15), transparent 70%);
   transform: translateY(-50%);
+  pointer-events: none;
 }
 
 #home::before {
@@ -209,6 +209,7 @@ section {
   background: radial-gradient(circle, rgba(56,189,248,0.18), transparent 70%);
   transform: translateY(-50%);
   animation: floatGlow 8s ease-in-out infinite;
+  pointer-events: none;
 }
 
 #home .floating-dots {
@@ -251,7 +252,20 @@ section {
   display: flex;
   gap: 15px;
   margin-top: 25px;
+  position: relative;
+  z-index: 5;
 }
+
+#home {
+  isolation: isolate;
+}
+
+#home > * {
+  position: relative;
+  z-index: 10;
+}
+
+
 
 /* ===================== ABOUT SECTION ===================== */
 #about {
