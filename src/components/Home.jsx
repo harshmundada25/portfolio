@@ -18,7 +18,10 @@ function Home() {
       </p>
 
       <div className="hero-buttons">
-        <a href="/Harsh_Mundada_Resume_2026.pdf" download>
+        <a href="/Harsh_Mundada_Resume_2026.pdf" 
+          download="Harsh_Mundada_Resume_2026.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
           <button>Download Resume</button>
         </a>
 
