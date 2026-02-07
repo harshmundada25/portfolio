@@ -1,11 +1,30 @@
-import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaArrowUp } from "react-icons/fa";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+  
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+  
   return (
     <footer className="footer reveal">
       <div className="footer-content">
+        <button 
+          onClick={scrollToTop} 
+          className="scroll-to-top"
+          aria-label="Scroll to top"
+        >
+          <FaArrowUp />
+        </button>
+
+        <div className="footer-divider"></div>
+
         <p className="footer-text">
-          © 2026 <span>Harsh Mundada</span>
+          © {currentYear} <span>Harsh Mundada</span>
         </p>
 
         <div className="footer-links">

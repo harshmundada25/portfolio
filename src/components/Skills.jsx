@@ -1,4 +1,4 @@
-function Skills() {
+﻿function Skills() {
   return (
     <section id="skills" className="reveal">
       <h2>Skills</h2>
@@ -9,7 +9,7 @@ function Skills() {
         <div className="skills-box">
           <span>Java</span>
           <span>Python</span>
-          <span>Modern JavaScript (ES6+)</span>
+          <span>JavaScript</span>
           <span>C</span>
           <span>C++</span>
         </div>
@@ -26,8 +26,6 @@ function Skills() {
           <span>Express.js</span>
           <span>RESTful API Development</span>
           <span>Responsive Web Design</span>
-          <span>Component-Based Architecture</span>
-          <span>Form Handling</span>
           <span>Full Stack Development</span>
         </div>
       </div>
@@ -66,10 +64,10 @@ function Skills() {
         <div className="skills-box">
           <span>Pandas</span>
           <span>NumPy</span>
+          <span>Plotly</span>
           <span>Data Analysis</span>
           <span>Data Cleaning</span>
           <span>Data Visualization</span>
-          <span>Plotly</span>
         </div>
       </div>
 
@@ -107,7 +105,6 @@ function Skills() {
           <span>Pytest</span>
           <span>Basic Unit Testing</span>
           <span>Debugging</span>
-          <span>Input Validation</span>
           <span>Error Handling</span>
         </div>
       </div>

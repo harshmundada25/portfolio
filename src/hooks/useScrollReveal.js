@@ -4,36 +4,34 @@ function useScrollReveal() {
   useEffect(() => {
     const reveals = document.querySelectorAll(".reveal");
 
-    const revealOnScroll = () => {
-      reveals.forEach((el) => {
-        const elementTop = el.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
+    // Use Intersection Observer for better performance
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            // Add stagger delay for multiple elements
+            setTimeout(() => {
+              entry.target.classList.add("active");
+            }, index * 100);
+          }
+        });
+      },
+      {
+        threshold: 0.15,
+        rootMargin: "0px 0px -100px 0px"
+      }
+    );
 
-        if (elementTop < windowHeight - 100) {
-          el.classList.add("active");
-        }
+    reveals.forEach((element) => {
+      observer.observe(element);
+    });
+
+    // Cleanup
+    return () => {
+      reveals.forEach((element) => {
+        observer.unobserve(element);
       });
     };
-
-    // Run once on load
-    revealOnScroll();
-
-    // Throttled scroll listener
-    let ticking = false;
-
-    const onScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          revealOnScroll();
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    window.addEventListener("scroll", onScroll);
-
-    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 }
 

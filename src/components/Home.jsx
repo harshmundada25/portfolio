@@ -1,6 +1,10 @@
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
 function Home() {
   return (
     <section id="home" className="reveal">
+      <div className="home-line"></div>
+      
       <h1>
         Hi, I'm <span>Harsh Mundada</span> 👋
       </h1>
@@ -29,6 +33,34 @@ function Home() {
           <button type="button" className="secondary-btn">
             View Projects
           </button>
+        </a>
+      </div>
+
+      <div className="hero-social">
+        <a
+          href="https://github.com/harshmundada25"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+          className="social-link"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/harsh-mundada-187706291"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+          className="social-link"
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href="mailto:harshmundada97@gmail.com"
+          aria-label="Email"
+          className="social-link"
+        >
+          <FaEnvelope />
         </a>
       </div>
     </section>
