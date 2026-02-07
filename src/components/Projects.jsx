@@ -105,6 +105,42 @@ function Projects() {
             GitHub
           </a>
         </div>
+
+        {/* Project 4 */}
+        <div className="project-card">
+          <h3>Agentic Honey-Pot for Scam Detection & Intelligence Extraction </h3>
+
+          <p>
+            A trap for scam chats: it spots fake messages, replies like a real
+            person to keep the scammer talking, and sends an alert with the
+            details.
+          </p>
+
+          <ul>
+            <li>Checks every new message quickly to spot scams</li>
+            <li>Auto AI replies keep the scammer talking safely</li>
+            <li>Picks out links, numbers, and accounts for clean reports</li>
+            <li>Secure API with key auth and health checks, ready to deploy</li>
+          </ul>
+
+          <div className="tech-stack">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>Machine Learning</span>
+            <span>Docker</span>
+            <span>APIs</span>
+            <span>AI auto-replies</span>
+            <span>Data extraction</span>
+          </div>
+
+          <a
+            href="https://github.com/harshmundada25/guvi_honeypot"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
     </section>
   );
