@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 
 const API_URL = import.meta.env.VITE_API_URL;
 
@@ -12,11 +12,6 @@ function Contact() {
   const [status, setStatus] = useState("");
   const [loading, setLoading] = useState(false);
   const nameInputRef = useRef(null);
-
-  // Auto-focus on name field when component mounts
-  useEffect(() => {
-    nameInputRef.current?.focus();
-  }, []);
 
   const handleChange = (e) => {
     setFormData({
