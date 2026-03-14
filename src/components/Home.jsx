@@ -26,7 +26,7 @@ function Home() {
 
           <div className="hero-buttons">
             <a
-              href="/Harsh_Mundada_Resume.pdf"
+              href="/Harsh_Mundada_Resume_2026.pdf"
               download
             >
               <button type="button">Download Resume</button>

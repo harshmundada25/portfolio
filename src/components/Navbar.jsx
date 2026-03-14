@@ -72,20 +72,29 @@ function Navbar() {
           </li>
           <li>
             <a 
-              href="#skills" 
-              onClick={() => setOpen(false)}
-              className={activeSection === "skills" ? "active" : ""}
-            >
-              Skills
-            </a>
-          </li>
-          <li>
-            <a 
               href="#projects" 
               onClick={() => setOpen(false)}
               className={activeSection === "projects" ? "active" : ""}
             >
               Projects
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#achievements" 
+              onClick={() => setOpen(false)}
+              className={activeSection === "achievements" ? "active" : ""}
+            >
+              Achievements
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#skills" 
+              onClick={() => setOpen(false)}
+              className={activeSection === "skills" ? "active" : ""}
+            >
+              Skills
             </a>
           </li>
           <li>

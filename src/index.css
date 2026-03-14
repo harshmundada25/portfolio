@@ -330,6 +330,7 @@ section {
 /* Common section heading styles */
 #about h2,
 #education h2,
+#achievements h2,
 #skills h2,
 #projects h2,
 #contact h2 {
@@ -347,6 +348,7 @@ section {
 
 #about h2::after,
 #education h2::after,
+#achievements h2::after,
 #skills h2::after,
 #projects h2::after,
 #contact h2::after {
@@ -1230,6 +1232,90 @@ section {
   border-color: rgba(56, 189, 248, 0.5);
 }
 
+/* ===================== ACHIEVEMENTS ===================== */
+#achievements {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+#achievements h2 {
+  margin-bottom: 46px;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+}
+
+.achievement-card {
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.14), transparent 52%),
+    linear-gradient(140deg, rgba(15, 23, 42, 0.96), rgba(30, 41, 59, 0.92));
+  border: 1px solid rgba(56, 189, 248, 0.22);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow:
+    0 20px 48px rgba(2, 6, 23, 0.34),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), transparent 55%, rgba(139, 92, 246, 0.08));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.light .achievement-card {
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0.96), rgba(241, 245, 249, 0.95));
+  border-color: rgba(203, 213, 225, 0.65);
+  box-shadow:
+    0 16px 38px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(56, 189, 248, 0.42);
+  box-shadow:
+    0 26px 56px rgba(2, 6, 23, 0.4),
+    0 0 60px rgba(56, 189, 248, 0.14);
+}
+
+.achievement-card:hover::before {
+  opacity: 1;
+}
+
+.achievement-card h3 {
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.35;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.light .achievement-card h3 {
+  color: #0f172a;
+}
+
+.achievement-card p:last-child {
+  font-size: clamp(14px, 1.6vw, 16px);
+  line-height: 1.75;
+  color: #cbd5e1;
+  margin: 0;
+}
+
+.light .achievement-card p:last-child {
+  color: #475569;
+}
+
 /* ===================== PROJECTS ===================== */
 #projects {
   max-width: 1150px;
@@ -2012,6 +2098,7 @@ section {
 .nav-links li a::after,
 button,
 .project-card,
+.achievement-card,
 .education-card,
 .skills-group,
 #about {
@@ -2254,6 +2341,7 @@ button,
 
   #about h2,
   #education h2,
+  #achievements h2,
   #skills h2,
   #projects h2,
   #contact h2 {
@@ -2263,6 +2351,7 @@ button,
 
   #about h2::after,
   #education h2::after,
+  #achievements h2::after,
   #skills h2::after,
   #projects h2::after,
   #contact h2::after {
@@ -2321,6 +2410,23 @@ button,
   .projects-grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .achievement-card {
+    padding: 24px;
+  }
+
+  .achievement-card h3 {
+    font-size: clamp(17px, 4vw, 20px);
+  }
+
+  .achievement-card p:last-child {
+    font-size: clamp(13px, 3.5vw, 15px);
   }
 
   .project-card {
@@ -2406,6 +2512,7 @@ button,
   #about,
   #contact form,
   .education-card,
+  .achievement-card,
   .project-card {
     padding: 20px 16px;
   }
@@ -2432,6 +2539,7 @@ button,
 
   #about,
   #education,
+  #achievements,
   #skills {
     max-width: 800px;
   }
