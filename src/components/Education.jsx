@@ -15,7 +15,7 @@ function Education() {
         </p>
 
         <p className="education-score">
-          <strong>CGPA:</strong> 9.48 / 10
+          <strong>CGPA:</strong> 9.58 / 10
         </p>
 
         <p className="education-desc">

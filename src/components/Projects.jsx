@@ -181,6 +181,45 @@ function Projects() {
             GitHub
           </a>
         </div>
+
+        {/* Project 6 */}
+        <div className="project-card">
+          <h3>AI-Assisted Hiring System</h3>
+
+          <p>
+            Built a resume screening and hiring workflow platform that extracts
+            text from documents, normalizes skills, ranks candidates, and helps
+            generate interview questions with a human-in-the-loop Streamlit UI.
+          </p>
+
+          <ul>
+            <li>PDF and document parsing for resume ingestion</li>
+            <li>Skill extraction, normalization, and candidate scoring</li>
+            <li>Interview question generation tailored to candidate profiles</li>
+            <li>Streamlit interface for review, workflows, and automation</li>
+          </ul>
+
+          <div className="tech-stack">
+            <span>Python</span>
+            <span>Streamlit</span>
+            <span>PDF Parsing</span>
+            <span>Sentence Transformers</span>
+            <span>OpenAI</span>
+            <span>Groq</span>
+            <span>Transformers</span>
+            <span>scikit-learn</span>
+            <span>pandas</span>
+            <span>NumPy</span>
+          </div>
+
+          <a
+            href="https://github.com/kush0926/ai_hiring_system"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
     </section>
   );

@@ -24,9 +24,19 @@
           <span>React.js</span>
           <span>Node.js</span>
           <span>Express.js</span>
+          <span>Spring Boot 3</span>
+          <span>Spring Security 6</span>
+          <span>JWT Authentication</span>
+          <span>Spring Data JPA</span>
+          <span>JPA / Hibernate</span>
           <span>RESTful API Development</span>
           <span>Responsive Web Design</span>
           <span>Full Stack Development</span>
+          <span>Tailwind CSS</span>
+          <span>React Router</span>
+          <span>Axios</span>
+          <span>Vite</span>
+          <span>Streamlit</span>
         </div>
       </div>
 
@@ -39,6 +49,7 @@
           <span>Database Management Systems</span>
           <span>Operating Systems</span>
           <span>Computer Networks</span>
+          <span>Design Patterns</span>
           <span>Software Development Life Cycle (SDLC)</span>
         </div>
       </div>
@@ -55,6 +66,9 @@
           <span>Text Classification</span>
           <span>Data Preprocessing</span>
           <span>Model Evaluation</span>
+          <span>OpenAI API</span>
+          <span>Groq API</span>
+          <span>AI Prompt Engineering</span>
         </div>
       </div>
 
@@ -65,9 +79,15 @@
           <span>Pandas</span>
           <span>NumPy</span>
           <span>Plotly</span>
+          <span>pdfplumber</span>
           <span>Data Analysis</span>
           <span>Data Cleaning</span>
           <span>Data Visualization</span>
+          <span>Tableau</span>
+          <span>Power BI</span>
+          <span>Big Data Analysis</span>
+          <span>Hadoop</span>
+          <span>Apache Spark</span>
         </div>
       </div>
 
@@ -76,9 +96,11 @@
         <h3>Databases</h3>
         <div className="skills-box">
           <span>Relational Database Design (SQL)</span>
+          <span>MySQL</span>
           <span>PostgreSQL</span>
           <span>MongoDB</span>
           <span>SQLite</span>
+          <span>Cassandra</span>
           <span>Basic Query Optimization</span>
           <span>Database Schema Design</span>
         </div>
@@ -89,11 +111,14 @@
         <h3>Tools & Deployment</h3>
         <div className="skills-box">
           <span>Version Control (Git & GitHub)</span>
-          <span>Docker (Basics)</span>
+          <span>Docker</span>
+          <span>Maven</span>
+          <span>Swagger / OpenAPI</span>
           <span>Postman</span>
+          <span>API Testing</span>
+          <span>Recharts</span>
           <span>Vercel</span>
           <span>Render</span>
-          <span>API Testing (Postman)</span>
           <span>Environment Setup</span>
         </div>
       </div>
