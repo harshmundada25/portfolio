@@ -1,16 +1,123 @@
-# React + Vite
+# 🚀 Harsh Mundada Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio website built with **React + Vite** to showcase my background, projects, skills, achievements, and contact details. The site is designed to feel clean, fast, and professional while highlighting both frontend UI work and full-stack project experience.
 
-Currently, two official plugins are available:
+## ✨ What This Portfolio Includes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 👋 Hero section with intro, resume download, and social links
+- 🙋 About section with a short professional summary
+- 🎓 Education details
+- 🏆 Achievements showcase
+- 🛠 Skills overview
+- 📂 Projects section with featured work
+- 📩 Contact section for direct communication
+- 🌙 Theme support with a polished UI experience
+- ✨ Scroll reveal animations for a smoother browsing feel
 
-## React Compiler
+## 🧩 Featured Projects
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The portfolio currently highlights:
 
-## Expanding the ESLint configuration
+- 🌱 Community Engagement Project
+- 💸 Smart Expense Tracker
+- 💼 Full Stack Developer Portfolio
+- 🛡️ Agentic Honey-Pot for Scam Detection & Intelligence Extraction
+- 🏥 Doctor & Patient Management System
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- JavaScript
+- CSS
+- React Icons
+
+### UI / Experience
+
+- Responsive layout
+- Reusable component structure
+- Scroll reveal effects
+- Theme-based styling
+
+## 📁 Project Structure
+
+```text
+portfolio/
+├── public/
+├── src/
+│   ├── components/
+│   ├── context/
+│   ├── hooks/
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── package.json
+└── README.md
+```
+
+## ⚙️ Getting Started
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Run the development server
+
+```bash
+npm run dev
+```
+
+### 3. Build for production
+
+```bash
+npm run build
+```
+
+### 4. Preview the production build
+
+```bash
+npm run preview
+```
+
+### 5. Run lint checks
+
+```bash
+npm run lint
+```
+
+## 📦 Available Scripts
+
+- `npm run dev` - Start the Vite development server
+- `npm run build` - Create a production build
+- `npm run preview` - Preview the production build locally
+- `npm run lint` - Run ESLint checks
+
+## 🎯 Main Sections in the Website
+
+- Home / Hero
+- About Me
+- Education
+- Projects
+- Achievements
+- Skills
+- Contact
+- Footer
+
+## 📬 Contact
+
+- GitHub: [harshmundada25](https://github.com/harshmundada25)
+- LinkedIn: [Harsh Mundada](https://www.linkedin.com/in/harsh-mundada-187706291)
+- Email: harshmundada97@gmail.com
+
+## 📝 Notes
+
+- The app is intended to run from the `portfolio` folder inside the frontend workspace.
+- The resume download button expects the resume file to be available in the public root.
+
+## 💡 A Quick Summary
+
+This portfolio is a personal showcase website built to present my work as a software developer in a clean, modern, and easy-to-navigate format. It reflects my frontend skills, project experience, and professional interests in a single polished presentation.

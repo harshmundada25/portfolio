@@ -141,6 +141,46 @@ function Projects() {
             GitHub
           </a>
         </div>
+
+        {/* Project 5 */}
+        <div className="project-card">
+          <h3>Doctor & Patient Management System</h3>
+
+          <p>
+            Built a secure healthcare management platform for doctors, patients,
+            appointments, prescriptions, and medical records with JWT-based
+            authentication and role-based access control.
+          </p>
+
+          <ul>
+            <li>Admin, doctor, and patient dashboards with separate access</li>
+            <li>JWT login flow with protected routes and token persistence</li>
+            <li>Patient registration, appointment booking, and prescription tracking</li>
+            <li>MySQL-backed data model with REST APIs and Swagger support</li>
+          </ul>
+
+          <div className="tech-stack">
+            <span>Java 21</span>
+            <span>Spring Boot 3</span>
+            <span>Spring Security 6</span>
+            <span>JWT</span>
+            <span>MySQL</span>
+            <span>React</span>
+            <span>Vite</span>
+            <span>Tailwind CSS</span>
+            <span>Axios</span>
+            <span>Recharts</span>
+            <span>Swagger/OpenAPI</span>
+          </div>
+
+          <a
+            href="https://github.com/harshmundada25/doctor-patient-management-system"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
     </section>
   );
