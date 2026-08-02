@@ -3,6 +3,10 @@ import { useEffect } from "react";
 function useScrollReveal() {
   useEffect(() => {
     const reveals = document.querySelectorAll(".reveal");
+    const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    const observerOptions = isMobile
+      ? { threshold: 0.05, rootMargin: "0px 0px -20px 0px" }
+      : { threshold: 0.15, rootMargin: "0px 0px -100px 0px" };
 
     // Use Intersection Observer for better performance
     const observer = new IntersectionObserver(
@@ -16,10 +20,7 @@ function useScrollReveal() {
           }
         });
       },
-      {
-        threshold: 0.15,
-        rootMargin: "0px 0px -100px 0px"
-      }
+      observerOptions
     );
 
     reveals.forEach((element) => {

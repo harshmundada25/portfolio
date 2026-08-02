@@ -885,14 +885,14 @@ section {
 }
 
 .about-layout {
+  display: block;
+}
+
+.top-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(230px, 290px);
   gap: 28px;
   align-items: start;
-}
-
-.about-content {
-  min-width: 0;
 }
 
 .about-photo-card {
@@ -946,20 +946,16 @@ section {
 }
 
 .about-top {
-  grid-area: top;
+  min-width: 0;
 }
 
 .about-rest {
-  grid-area: rest;
+  margin-top: 16px;
 }
 
 .about-top p,
 .about-rest p {
   margin-bottom: 22px;
-}
-
-.about-rest {
-  margin-top: 14px;
 }
 
 #about p {
@@ -2415,7 +2411,7 @@ button,
     display: none;
   }
 
-  .about-layout {
+  .top-row {
     grid-template-columns: 1fr;
     gap: 20px;
   }
