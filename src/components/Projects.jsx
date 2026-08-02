@@ -73,32 +73,32 @@ function Projects() {
 
         {/* Project 3 */}
         <div className="project-card">
-          <h3>Full Stack Developer Portfolio</h3>
+          <h3>Real-Time Website User Activity Tracker</h3>
 
           <p>
-            Designed and developed a modern full-stack personal portfolio
-            website to showcase projects, skills, and professional background.
-            Includes a complete contact system with backend integration.
+            A real-time website analytics platform that processes user activity
+            streams using Apache Kafka, Spark Structured Streaming, Cassandra,
+            and Streamlit.
           </p>
 
           <ul>
-            <li>Responsive UI with dark & light mode</li>
-            <li>Contact form with MongoDB storage</li>
-            <li>Email notifications on submission</li>
-            <li>Admin API to view messages</li>
+            <li>Real-time website activity tracking with Kafka event streaming</li>
+            <li>Live analytics using Spark Structured Streaming</li>
+            <li>Cassandra-powered storage for scalable analytics</li>
+            <li>Interactive Streamlit dashboard for real-time insights</li>
           </ul>
 
           <div className="tech-stack">
-            <span>React.js</span>
-            <span>Vite</span>
-            <span>Node.js</span>
-            <span>Express.js</span>
-            <span>MongoDB</span>
-            <span>Nodemailer</span>
+            <span>Python</span>
+            <span>Apache Kafka</span>
+            <span>Apache Spark</span>
+            <span>Cassandra</span>
+            <span>Streamlit</span>
+            <span>Docker</span>
           </div>
 
           <a
-            href="https://github.com/harshmundada25/portfolio"
+            href="https://github.com/harshmundada25/activity-tracker"
             target="_blank"
             rel="noreferrer"
           >
@@ -107,6 +107,41 @@ function Projects() {
         </div>
 
         {/* Project 4 */}
+        <div className="project-card">
+          <h3>Shopverse</h3>
+
+          <p>
+            A production-ready full-stack e-commerce platform featuring
+            authentication, product management, shopping cart, checkout, seller
+            dashboard, and role-based access.
+          </p>
+
+          <ul>
+            <li>Secure JWT-based authentication with role-based access</li>
+            <li>Product catalog, shopping cart, and checkout workflow</li>
+            <li>Seller dashboard with order and inventory management</li>
+            <li>RESTful Spring Boot backend with responsive React frontend</li>
+          </ul>
+
+          <div className="tech-stack">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>React</span>
+            <span>Vite</span>
+            <span>MySQL</span>
+            <span>Tailwind CSS</span>
+          </div>
+
+          <a
+            href="https://github.com/harshmundada25/shopverse"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+        </div>
+
+        {/* Project 5 */}
         <div className="project-card">
           <h3>Agentic Honey-Pot for Scam Detection & Intelligence Extraction </h3>
 
@@ -142,7 +177,7 @@ function Projects() {
           </a>
         </div>
 
-        {/* Project 5 */}
+        {/* Project 6 */}
         <div className="project-card">
           <h3>Doctor & Patient Management System</h3>
 
@@ -182,7 +217,7 @@ function Projects() {
           </a>
         </div>
 
-        {/* Project 6 */}
+        {/* Project 7 */}
         <div className="project-card">
           <h3>AI-Assisted Hiring System</h3>
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap");
+﻿@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -885,15 +885,24 @@ section {
 }
 
 .about-layout {
-  display: block;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(230px, 290px);
   gap: 28px;
+  align-items: start;
+}
+
+.about-content {
+  min-width: 0;
 }
 
 .about-photo-card {
-  grid-area: photo;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 290px;
+  justify-self: end;
+  align-self: start;
   padding: 16px;
   border-radius: 14px;
   background: linear-gradient(180deg, rgba(8,18,37,0.65), rgba(7,11,23,0.35));
@@ -907,7 +916,8 @@ section {
 .about-photo-card img {
   display: block;
   width: 100%;
-  height: 280px;
+  height: auto;
+  aspect-ratio: 4 / 5;
   max-width: 100%;
   object-fit: cover;
   object-position: center center;
@@ -941,22 +951,6 @@ section {
 
 .about-rest {
   grid-area: rest;
-}
-
-.top-row {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.about-top {
-  flex: 0 0 60%;
-}
-
-.about-photo-card {
-  flex: 0 0 40%;
-  display: flex;
-  align-items: flex-start;
 }
 
 .about-top p,
@@ -1434,6 +1428,8 @@ section {
   position: relative;
   backdrop-filter: blur(10px);
   overflow: hidden;
+  min-width: 0;
+  height: 100%;
 }
 
 .project-card::before {
@@ -1494,6 +1490,7 @@ section {
   line-height: 1.75;
   color: #cbd5e1;
   margin-bottom: 16px;
+  overflow-wrap: anywhere;
 }
 
 .light .project-card p {
@@ -1512,6 +1509,7 @@ section {
   margin-bottom: 8px;
   color: #94a3b8;
   position: relative;
+  overflow-wrap: anywhere;
 }
 
 .project-card ul li::marker {
@@ -2419,20 +2417,14 @@ button,
 
   .about-layout {
     grid-template-columns: 1fr;
-    grid-template-areas:
-      "top"
-      "photo"
-      "rest";
     gap: 20px;
   }
 
-  .top-row {
-    display: block;
-  }
-
   .about-photo-card {
+    order: -1;
     max-width: 240px;
     margin: 0 auto;
+    justify-self: center;
     justify-content: center;
   }
 

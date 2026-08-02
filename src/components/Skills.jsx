@@ -28,7 +28,6 @@
           <span>Spring Security 6</span>
           <span>JWT Authentication</span>
           <span>Spring Data JPA</span>
-          <span>JPA / Hibernate</span>
           <span>RESTful API Development</span>
           <span>Responsive Web Design</span>
           <span>Full Stack Development</span>
@@ -61,13 +60,11 @@
           <span>Machine Learning</span>
           <span>Natural Language Processing (NLP)</span>
           <span>Scikit-learn</span>
-          <span>TF-IDF</span>
-          <span>Random Forest</span>
-          <span>Text Classification</span>
           <span>Data Preprocessing</span>
           <span>Model Evaluation</span>
-          <span>OpenAI API</span>
-          <span>Groq API</span>
+          <span>OpenAI/Groq API</span>
+          <span>LLM</span>
+          <span>Agentic AI</span>
           <span>AI Prompt Engineering</span>
         </div>
       </div>
@@ -83,7 +80,6 @@
           <span>Data Analysis</span>
           <span>Data Cleaning</span>
           <span>Data Visualization</span>
-          <span>Tableau</span>
           <span>Power BI</span>
           <span>Big Data Analysis</span>
           <span>Hadoop</span>
@@ -116,10 +112,8 @@
           <span>Swagger / OpenAPI</span>
           <span>Postman</span>
           <span>API Testing</span>
-          <span>Recharts</span>
           <span>Vercel</span>
           <span>Render</span>
-          <span>Environment Setup</span>
         </div>
       </div>
 
