@@ -21,8 +21,10 @@ function About() {
             </p>
           </div>
 
-          <div className="about-photo-card">
-            <img src="/HarshPhoto.jpeg" alt="Harsh Mundada" />
+          <div className="about-photo-wrap">
+            <div className="about-photo-card">
+              <img src="/HarshPhoto.jpeg" alt="Harsh Mundada" />
+            </div>
           </div>
         </div>
 
